@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Envelope Container */
+.envelope {
+    width: 9.5in;  /* Envelope size 9.5 x 4.125 inches */
+    height: 4.125in;
+    background-color: #dcdcdc; /* Neutral background */
+    border: 1px solid #b0b0b0;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tagline Styling */
+.tagline p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F39C12; /* Brand accent color */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Optional media query to make it responsive */
+@media screen and (max-width: 768px) {
+    .envelope {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .logo {
+        width: 120px;
+    }
+    .tagline p {
+        font-size: 18px;
+    }
+}
